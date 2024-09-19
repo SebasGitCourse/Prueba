@@ -1,0 +1,830 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+
+/* SECCION 1 */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#section-encabezado {
+    background-image: url("https://www.vargascorporation.com/images/banner-desarrollo-web.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 1cm;
+    gap: 1cm;
+}
+
+#img-perfil, #img-udla {
+    border-radius: 15px;
+    width: 200px;
+}
+
+#div-info-perfil {
+    color: white;
+    flex: 1;
+}
+
+#nombre, .info-perfil {
+    padding: 0.7em 0;
+    width: 100%;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.4em;
+}
+
+#nombre {
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 3px rgb(255, 0, 0); /*x , y , difuminado, color*/
+    font-size: 1.7em;
+}
+
+/* SECCION 2 */
+
+#section-info-Sebastian {
+    display: grid;
+    grid-template-areas: 
+    "t0 t0 t0"
+    "t1 t2 t3"
+    "s1 s2 s3"
+    "f1 f2 f3"
+    "t4 t5 t6"
+    "s4 s5 s6"
+    "f4 f5 f6"
+    ;
+    background-image: url("https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    gap: 1cm;
+    padding: 1cm;
+}
+
+#titulo-sobreMi {
+    font-variant: small-caps;
+    text-align: center;
+    padding: 0.5cm;
+    background-color: orange;
+    border-radius: 15px;
+    font-size: 1.6em;
+    grid-area: t0;
+}
+
+.titulo-seccion2 {
+    padding: 10px;
+    font-variant: small-caps;
+    text-align: center;
+    border-radius: 15px;
+    background-color: lightcoral;
+    font-size: 20px;
+}
+
+.section2 {
+    height: auto;
+    color: white;
+    line-height: 2.5;
+}
+
+#t1 { grid-area: t1; }
+#t2 { grid-area: t2; }
+#t3 { grid-area: t3; }
+#t4 { grid-area: t4; }
+#t5 { grid-area: t5; }
+#t6 { grid-area: t6; }
+
+#juego-favorito { grid-area: s1; }
+#comida-favorita { grid-area: s2; }
+#pelicula-favorita { grid-area: s3; }
+#serie-favorita { grid-area: s4; }
+#pasatiempo { grid-area: s5; }
+#meta-personal { grid-area: s6; }
+
+#f1 { grid: f1;}
+#f2 { grid: f2;}
+#f3 { grid: f3;}
+#f4 { grid: f4;}
+#f5 { grid: f5;}
+#f6 { grid: f6;}
+
+h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.item p {
+    margin: 0 0.5cm;
+    text-align: justify;
+}
+
+.figuraSeccion2 {
+    text-align: center;
+    color: white;
+}
+
+.figuraSeccion2 img {
+    border-radius: 15px;
+    width: 100%;
+    height: 30vh;
+    margin: 0 0 1cm 0;
+}
+
+/* SECTION 3 */
+
+#titulo-mascota {
+    padding: 0.5cm;
+    margin: 1cm;
+    border-radius: 15px;
+    background-color: orange;
+    font-size: 1.6em;
+    color: black;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#div-mascota {
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/30/11/01/forest-6754057_1280.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#section-mascota {
+    padding: 1cm;
+    justify-content: center;
+    gap: 1cm;
+}
+
+.div-img-mascota {
+    border-radius: 15px;
+    width: 50%;
+    height: 45vh;
+}
+
+#img-codornices1, #img-codornices2 {
+    background-size: cover;
+    background-position: center;
+    border: double 10px transparent;
+    animation: rgb-border alternate 2.5s infinite;
+}
+
+#img-codornices1 {
+    background-image: url("/IMG/img-codornices1.jpg");
+}
+
+#img-codornices2 {
+    background-image: url("/IMG/img-codornices2.jpg");
+}
+
+#nombre-mascota {
+    text-align: center;
+    padding: 0;
+    margin: 1cm;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    /*Para animación*/
+    color: transparent;
+    background: linear-gradient(90deg, orange, green);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text-animacion 3s alternate infinite;
+}
+
+#descripcion-codornices {
+    line-height: 3.5;
+    color: white;
+    text-align: justify;
+    margin: 1cm;
+}
+
+/* FOOTER - REDES SOCIALES */
+
+#fin-pagina {
+    width: 100%;
+}
+
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0.3cm;
+    font-variant: small-caps;
+    background-color: goldenrod;
+}
+
+#div-redes{
+    gap: 2cm;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.red-social {
+    text-decoration: none;
+    width: 5%;
+}
+
+.figure-logoRedSocial {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.figure-logoRedSocial img {
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+.figure-logoRedSocial figcaption {
+    color: black;
+    font-size: 10px;
+    margin: 0;
+    font-variant: small-caps;
+}
+
+figure img:hover {
+    transition: transform 0s;
+    transform: scale(1.1);
+}
+
+.figure-logoRedSocial img:hover {
+    transition: transform 0s;
+    transform: scale(1.5);
+}
+
+}
+
+/*            TABLET          */
+/*            TABLET          */
+/*            TABLET          */
+/*            TABLET          */
+/*            TABLET          */
+/*            TABLET          */
+/*            TABLET          */
+/*            TABLET          */
+
+
+@media (min-width: 480px) and (max-width: 1024px) {
+
+   /* SECCION 1 */
+#contenedor-general {
+    display: flex;
+    flex-direction: column;
+}
+
+   #section-encabezado {
+    background-image: url("https://www.vargascorporation.com/images/banner-desarrollo-web.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1cm;
+    display: grid;
+    grid-template-areas: 
+        "perfil info"
+        "udla info";
+    gap: 1cm;
+}
+
+#img-perfil {
+    grid-area: perfil;
+}
+
+#img-udla {
+    grid-area: udla;
+}
+
+#img-perfil, #img-udla {
+    width: 20vw;
+    height: 25vw;
+    border-radius: 15px;
+}
+
+#div-info-perfil {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1cm;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 2vw;
+    color: white;
+    font-variant: small-caps;
+}
+
+#nombre {
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 3px rgb(255, 0, 0); /*x , y , difuminado, color*/
+    font-size: 3vw;
+}
+
+/* SECCION 2 */
+
+#section-info-Sebastian {
+    display: grid;
+    grid-template-areas: 
+    "t0 t0"
+    "t1 t2"
+    "s1 s2"
+    "f1 f2"
+    "t3 t4"
+    "s3 s4"
+    "f3 f4"
+    "t5 t6"
+    "s5 s6"
+    "f5 f6"
+    ;
+    background-image: url("https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    gap: 1cm;
+    padding: 1cm;
+}
+
+#titulo-sobreMi {
+    font-variant: small-caps;
+    text-align: center;
+    padding: 0.5cm;
+    background-color: orange;
+    border-radius: 15px;
+    font-size: 1.6em;
+    grid-area: t0;
+}
+
+.titulo-seccion2 {
+    padding: 10px;
+    font-variant: small-caps;
+    text-align: center;
+    border-radius: 15px;
+    background-color: lightcoral;
+    font-size: 20px;
+}
+
+.section2 {
+    height: auto;
+    color: white;
+    line-height: 2.5;
+}
+
+#t1 { grid-area: t1; }
+#t2 { grid-area: t2; }
+#t3 { grid-area: t3; }
+#t4 { grid-area: t4; }
+#t5 { grid-area: t5; }
+#t6 { grid-area: t6; }
+
+#juego-favorito { grid-area: s1; }
+#comida-favorita { grid-area: s2; }
+#pelicula-favorita { grid-area: s3; }
+#serie-favorita { grid-area: s4; }
+#pasatiempo { grid-area: s5; }
+#meta-personal { grid-area: s6; }
+
+#f1 { grid: f1;}
+#f2 { grid: f2;}
+#f3 { grid: f3;}
+#f4 { grid: f4;}
+#f5 { grid: f5;}
+#f6 { grid: f6;}
+
+h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.item p {
+    margin: 0 0.5cm;
+    text-align: justify;
+}
+
+.figuraSeccion2 {
+    text-align: center;
+    color: white;
+}
+
+.figuraSeccion2 img {
+    border-radius: 15px;
+    width: 100%;
+    height: 30vh;
+    margin: 0 0 1cm 0;
+}
+
+/* SECTION 3 */
+
+#titulo-mascota {
+    padding: 0.5cm;
+    margin: 1cm;
+    border-radius: 15px;
+    background-color: orange;
+    font-size: 1.6em;
+    color: black;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#div-mascota { 
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/30/11/01/forest-6754057_1280.jpg");
+    background-size: 100% 100%;
+}
+
+#section-mascota {
+    display: flex;
+    padding: 1cm;
+    justify-content: center;
+    gap: 1cm;
+}
+
+.div-img-mascota {
+    border-radius: 15px;
+    width: 50%;
+    height: 45vh;
+}
+
+#img-codornices1, #img-codornices2 {
+    background-size: cover;
+    background-position: center;
+    border: double 10px transparent;
+    animation: rgb-border alternate-reverse 2.5s infinite;
+}
+
+#img-codornices1 {
+    background-image: url("/IMG/img-codornices1.jpg");
+}
+
+#img-codornices2 {
+    background-image: url("/IMG/img-codornices2.jpg");
+}
+
+#nombre-mascota {
+    font-variant: small-caps;
+    text-align: center;
+    padding: 0;
+    margin: 1cm;
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    /*Para animación*/
+    color: transparent;
+    background: linear-gradient(90deg, orange, green);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text-animacion 3s alternate infinite;
+}
+
+#descripcion-codornices {
+    line-height: 3.5;
+    color: white;
+    text-align: justify;
+    margin: 1cm;
+}
+
+/* FOOTER - REDES SOCIALES */
+
+#fin-pagina {
+    border: solid 5px black;
+    width: 100%;
+}
+
+#redes-sociales {
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0.3cm;
+    background-color: goldenrod;
+}
+
+#div-redes{
+    gap: 2cm;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.red-social {
+    text-decoration: none;
+    width: 10%;
+}
+
+.figure-logoRedSocial {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.figure-logoRedSocial img {
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+.figure-logoRedSocial figcaption {
+    color: black;
+    font-variant: small-caps;
+    font-size: 10px;
+    margin: 0;
+}
+
+figure img:hover {
+    transition: transform 0s;
+    transform: scale(1.1);
+}
+
+.figure-logoRedSocial img:hover {
+    transition: transform 0s;
+    transform: scale(1.8);
+}
+
+}
+
+/*         MOVIL        */
+/*         MOVIL        */
+/*         MOVIL        */
+/*         MOVIL        */
+/*         MOVIL        */
+/*         MOVIL        */
+/*         MOVIL        */
+
+@media (max-width: 767px) {
+    
+   /* SECCION 1 */
+   #contenedor-general {
+   display: flex;
+   flex-direction: column;
+}
+
+   #section-encabezado {
+    background-image: url("https://www.vargascorporation.com/images/banner-desarrollo-web.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1cm;
+}
+
+#img-perfil, #img-udla {
+    width: 40vw;
+    height: 45vw;
+    border-radius: 15px;
+}
+
+#div-info-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1cm;
+    text-align: center;
+    font-size: 3.5vw;
+    color: white;
+}
+
+#nombre {
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 3px rgb(255, 0, 0); /*x , y , difuminado, color*/
+    font-size: 5vw;
+}
+
+/* SECCION 2 */
+
+#section-info-Sebastian {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    gap: 1cm;
+    padding: 1cm;
+}
+
+#titulo-sobreMi {
+    width: 100%;
+    text-align: center;
+    padding: 0.5cm;
+    background-color: orange;
+    border-radius: 15px;
+    font-size: 1.6em;
+}
+
+.titulo-seccion2 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: lightcoral;
+    font-size: 20px;
+}
+
+.section2 {
+    height: auto;
+    color: white;
+    line-height: 2.5;
+}
+
+h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.item p {
+    margin: 0 0.5cm;
+    text-align: justify;
+}
+
+.figuraSeccion2 {
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.figuraSeccion2 img {
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 0 1cm 0;
+}
+
+/* SECTION 3 */
+
+#titulo-mascota {
+    padding: 0.5cm;
+    margin: 1cm;
+    border-radius: 15px;
+    background-color: orange;
+    font-size: 1.6em;
+    color: black;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#div-mascota { 
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/30/11/01/forest-6754057_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#section-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding: 1cm;
+    gap: 1cm;
+}
+
+.div-img-mascota {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    border: double 10px transparent;
+    animation: rgb-border alternate 3s infinite;
+}
+
+#img-codornices1, #img-codornices2 {
+    background-size: cover;
+}
+
+#img-codornices1 {
+    background-image: url("/IMG/img-codornices1.jpg");
+}
+
+#img-codornices2 {
+    background-image: url("/IMG/img-codornices2.jpg");
+}
+
+#nombre-mascota {
+    font-variant: small-caps;
+    text-align: center;
+    padding: 0;
+    margin: 1cm;
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    /*Para animación*/
+    color: transparent;
+    background: linear-gradient(90deg, orange, green);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text-animacion 3s alternate infinite;
+}
+
+#descripcion-codornices {
+    line-height: 3.5;
+    color: white;
+    text-align: justify;
+    margin: 1cm;
+}
+
+/* FOOTER - REDES SOCIALES */
+
+#fin-pagina {
+    border: solid 5px black;
+    width: 100%;
+}
+
+#redes-sociales {
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 0.3cm;
+    background-color: goldenrod;
+}
+
+#div-redes{
+    gap: 2cm;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-social {
+    text-decoration: none;
+    width: 10%;
+}
+
+.figure-logoRedSocial {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.figure-logoRedSocial img {
+    border-radius: 50%;
+    max-width: 50%;
+    margin: 10px;
+}
+
+.figure-logoRedSocial figcaption {
+    color: black;
+    font-variant: small-caps;
+    font-size: 10px;
+    margin: 0;
+}
+
+figure img:hover {
+    transition: transform 0s;
+    transform: scale(1.1);
+}
+
+.figure-logoRedSocial img:hover {
+    transition: transform 0s;
+    transform: scale(1.8);
+}
+
+}
+
+/* ANIMACIONES */
+
+@keyframes text-animacion {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 180%;
+    }
+}
+
+@keyframes rgb-border {
+    0% {
+        border-color: lightsalmon;
+    }
+    25% {
+        border-color: lightgreen; 
+    }
+    50% {
+        border-color: lime; 
+    }
+    75% {
+        border-color: lightcoral;
+    }
+    100% {
+        border-color: lightskyblue; 
+    }
+}
